@@ -6,7 +6,7 @@
 /*   By: rabril-h <rabril-h@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 20:51:10 by rabril-h          #+#    #+#             */
-/*   Updated: 2023/11/08 00:17:14 by rabril-h         ###   ########.fr       */
+/*   Updated: 2023/11/08 19:20:29 by rabril-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,17 +55,17 @@ int main(void)
   std::cout << std::endl << " TEST WITH CHAR " << std::endl << std::endl;
 
    
-char arr2[11] = {'h','e','l','l','o',' ','w','o','r','l','d'};
-  // char arr2[] = "hello world";
+  //char arr2[11] = {'h','e','l','l','o',' ','w','o','r','l','d'};
+  char arr2[] = "hello world";
   c = 0;
-std::cout << sizeof(arr2) / sizeof(char) << std::endl;
+  //std::cout << sizeof(arr2) / sizeof(char) << std::endl;
   while(c < sizeof(arr2) / sizeof(char))
   {
     std::cout << "Value of position " << c << " BEFORE operation is " << arr2[c] << std::endl;
     c++;
   }
 
-  iter(arr2, 11, *toUpper);
+  iter(arr2, 11, *toUpper); // ? Where could add an extra space for '/0' making a total of 12 which would convert it to question mark symbol. This would not work for the commented way of working with an array of chars using the {'x'...'x'} approach which would require an exact length
 
   std::cout << std::endl;
 
