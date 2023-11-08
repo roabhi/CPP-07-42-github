@@ -6,7 +6,7 @@
 #    By: rabril-h <rabril-h@student.42barcelona.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/07 21:37:02 by rabril-h          #+#    #+#              #
-#    Updated: 2023/11/08 19:11:12 by rabril-h         ###   ########.fr        #
+#    Updated: 2023/11/08 19:13:53 by rabril-h         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@
 NAME = Array
 RM = rm -f
 CC = c++
-CFLAGS = -Werror -Wextra -Wall -std=c++98 #-g -fsanitize=address
+CFLAGS = -Werror -Wextra -Wall -std=c++98 -g -fsanitize=address
 
 
 FILES = main 
