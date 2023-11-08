@@ -6,14 +6,14 @@
 /*   By: rabril-h <rabril-h@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 21:38:23 by rabril-h          #+#    #+#             */
-/*   Updated: 2023/11/07 22:10:20 by rabril-h         ###   ########.fr       */
+/*   Updated: 2023/11/08 00:25:05 by rabril-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include "Array.hpp"
 
-#define MAX_VAL 750
+#define MAX_VAL 5
 
 int	subjectTest( void )
 {
@@ -25,6 +25,7 @@ int	subjectTest( void )
     for (int i = 0; i < MAX_VAL; i++)
     {
         const int value = rand();
+        std::cout << "value inserted is " << value << std::endl;
         numbers[ i ] = value;
         mirror[ i ] = value;
     }
