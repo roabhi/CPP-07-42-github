@@ -6,7 +6,7 @@
 #    By: rabril-h <rabril-h@student.42barcelona.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/07 21:37:02 by rabril-h          #+#    #+#              #
-#    Updated: 2023/11/07 21:53:37 by rabril-h         ###   ########.fr        #
+#    Updated: 2023/11/08 19:11:12 by rabril-h         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,17 +33,17 @@ DEP = $(addsuffix .d, $(basename $(OBJ)))
 	@${CC} $(CFLAGS) -MMD -c $< -o $@
 
 all:
-	@$(MAKE) $(NAME) #--no-print-directory
+	@$(MAKE) $(NAME) --no-print-directory
 
 $(NAME):: $(OBJ) 
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
 clean:
-	@$(RM) $(OBJ) $(DEP) #--no-print-directory
+	@$(RM) $(OBJ) $(DEP) --no-print-directory
 	@echo "Objects cleaned"
 
 fclean: clean
-	@$(RM) $(NAME) #--no-print-directory
+	@$(RM) $(NAME) --no-print-directory
 	@echo "All compilation files removed"
 
 re:	fclean all

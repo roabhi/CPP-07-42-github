@@ -6,7 +6,7 @@
 /*   By: rabril-h <rabril-h@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 21:42:15 by rabril-h          #+#    #+#             */
-/*   Updated: 2023/11/08 00:20:18 by rabril-h         ###   ########.fr       */
+/*   Updated: 2023/11/08 19:06:12 by rabril-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ Array<T>	&Array<T>::operator=( const Array& array )
 template <typename T>
 T	&Array<T>::operator[]( unsigned int pos ) const
 {
-	std::cout << pos << " // " << this->_size << std::endl;
+	//std::cout << pos << " // " << this->_size << std::endl;
 	if (pos >= this->_size)
 		throw std::out_of_range("Please introduce a valid position.");
 	return (this->_arr[pos]);
