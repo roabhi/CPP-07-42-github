@@ -13,7 +13,7 @@
 #include <iostream>
 #include "Array.hpp"
 
-#define MAX_VAL 750
+#define MAX_VAL 10
 
 int	subjectTest( void )
 {
@@ -25,6 +25,7 @@ int	subjectTest( void )
     for (int i = 0; i < MAX_VAL; i++)
     {
         const int value = rand();
+        std::cout << "el valor añadido al array es " << value << std::endl;
         numbers[ i ] = value;
         mirror[ i ] = value;
     }
