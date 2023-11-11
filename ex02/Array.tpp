@@ -6,7 +6,7 @@
 /*   By: rabril-h <rabril-h@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 21:42:15 by rabril-h          #+#    #+#             */
-/*   Updated: 2023/11/08 19:06:12 by rabril-h         ###   ########.fr       */
+/*   Updated: 2023/11/11 14:14:37 by rabril-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 template <typename T>
 Array<T>::Array() : _arr(NULL), _size(0)
 {
-	//this->arr = NULL;
+	return ;
 }
 
 template <typename T>
